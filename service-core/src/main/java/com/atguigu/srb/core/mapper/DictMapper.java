@@ -17,10 +17,11 @@ import java.util.List;
 public interface DictMapper extends BaseMapper<Dict> {
 
     /**
-    * @Description: 批量插入
+    * @Description: 批量插入数据
      * @param list
     * @return:
     */
     void insertBatch(List<ExcelDictDTO> list);
+
 
 }
