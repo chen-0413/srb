@@ -16,7 +16,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
  * @date :  2023/7/5~20:33~星期三
  * @description: 配置Redis文件中配置Redis序列化
  */
-@Configuration
+  @Configuration
 public class RedisConfig {
 
     @Bean
