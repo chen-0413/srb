@@ -4,6 +4,7 @@ import com.alibaba.excel.context.AnalysisContext;
 import com.alibaba.excel.event.AnalysisEventListener;
 import com.atguigu.srb.core.mapper.DictMapper;
 import com.atguigu.srb.core.pojo.dto.ExcelDictDTO;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -16,8 +17,8 @@ import java.util.List;
  * @description: 创建数字字典的监听器
  */
 @Slf4j
-//@AllArgsConstructor //全参
-@NoArgsConstructor //无参
+@AllArgsConstructor //全参构造
+@NoArgsConstructor //无参构造
 public class ExcelDictDTOListener extends AnalysisEventListener<ExcelDictDTO> {
 
     /**
