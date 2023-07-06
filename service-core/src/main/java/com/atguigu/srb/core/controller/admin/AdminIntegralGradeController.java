@@ -48,9 +48,9 @@ public class AdminIntegralGradeController {
     @GetMapping("/list")
     public R listAll() {
 
-        log.info("hi i'm helen");
+        /*log.info("hi i'm helen");
         log.warn("warning!!!");
-        log.error("it's a error");
+        log.error("it's a error");*/
         List<IntegralGrade> list = integralGradeService.list();
         return R.ok().data("list", list);
 
