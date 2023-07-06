@@ -1,6 +1,8 @@
 package com.atguigu.srb.core.pojo.dto;
 
 import com.alibaba.excel.annotation.ExcelProperty;
+import com.baomidou.mybatisplus.annotation.TableField;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -11,7 +13,7 @@ import lombok.Data;
 @Data
 public class ExcelDictDTO {
 
-    @ExcelProperty("id") // @ExcelProperty 让对应的属性在Excel中使用对应的名称
+    @ExcelProperty("id")
     private Long id;
 
     @ExcelProperty("上级id")
@@ -25,4 +27,6 @@ public class ExcelDictDTO {
 
     @ExcelProperty("编码")
     private String dictCode;
+
+
 }
