@@ -48,8 +48,6 @@ public class ApiSmsController {
         // 具体的原因是RegexValidateUtils.checkCellphone()的方法里面验证手机号段 其中不包括181这个号码段
         Assert.isTrue(RegexValidateUtils.checkCellphone(mobile), ResponseEnum.MOBILE_ERROR);
 
-
-
         //生成 随机验证码
         String code = RandomUtils.getFourBitRandom();
         //组装短信 模板参数

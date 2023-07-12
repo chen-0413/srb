@@ -13,7 +13,7 @@ spring:
     username: root
     password: 1234
   redis: # Redis的配置
-    host: 192.168.200.111
+    host: 192.168.200.131
     port: 6379
     database: 0
     password:   #默认为空
